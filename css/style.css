@@ -1,0 +1,207 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  padding: 0px;
+}
+
+select {
+  outline: none;
+}
+
+main {
+  display: block;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+html body {
+  width: 100%;
+  height: 100%;
+}
+html body header {
+  width: 100%;
+  height: auto;
+  margin-bottom: 5vw;
+}
+html body header .top {
+  width: 100%;
+  height: 13vw;
+  position: relative;
+}
+html body header .top p {
+  position: absolute;
+  color: #fff;
+  font-weight: bold;
+  font-size: 5.5vw;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+html body header .bottom {
+  width: 100%;
+  height: auto;
+}
+html body header .bottom .logo {
+  width: 39vw;
+  height: 16vw;
+  background: url("../images/logo.png") no-repeat;
+  background-size: 100%;
+  margin: 4vw auto 5vw;
+}
+html body header .bottom p {
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+html body section {
+  width: 90%;
+  height: auto;
+  background: #fff;
+  border: solid 1px #dcdcdc;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 0px 10px 1px #878d93;
+          box-shadow: 0px 0px 10px 1px #878d93;
+  margin: 0px auto;
+  overflow: hidden;
+}
+html body section .box {
+  width: 100%;
+  height: auto;
+  padding: 2.2vw 5vw;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-bottom: solid 1px #dcdcdc;
+}
+html body section .box:last-child {
+  font-size: 0px;
+  padding: 0px;
+}
+html body section .box span {
+  display: inline-block;
+  width: 16%;
+  height: auto;
+  font-size: 3vw;
+  padding-right: 2vw;
+}
+html body section .box select, html body section .box input {
+  width: 80%;
+  height: 9vw;
+  padding-left: 5px;
+  border: solid 1px #c0c0c0;
+  border-radius: 5px;
+  background: #f8f8f8;
+  color: #000;
+  font-size: 3.5vw;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+html body section .box input {
+  padding-left: 10px;
+}
+html body section .box button {
+  width: 50%;
+  height: 12vw;
+  background: #a4a4a4;
+  color: #fff;
+  font-size: 4vw;
+}
+html body section .box button:hover, html body section .box button:active, html body section .box button.active {
+  background: #444;
+}
+html body section .box button.sent {
+  background: #bd9872;
+}
+html body section .box button.sent:hover, html body section .box button.sent:active, html body section .box button.sent.active {
+  background: #c7925e;
+}
+html body .bg {
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(#fff), to(#979797));
+  background: -o-linear-gradient(bottom, #fff 0%, #979797 100%);
+  background: linear-gradient(to top, #fff 0%, #979797 100%);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -999;
+}
+
+@media screen and (max-width: 360px) {
+  html body main .box span {
+    width: 17%;
+  }
+  html body main .box select, html body main .box input {
+    width: 79%;
+  }
+}
+@media screen and (max-width: 320px) {
+  html body main .box {
+    padding: 1.5vw 3vw;
+  }
+  html body main .box span {
+    width: 18%;
+  }
+  html body main .box select, html body main .box input {
+    width: 77%;
+  }
+}
